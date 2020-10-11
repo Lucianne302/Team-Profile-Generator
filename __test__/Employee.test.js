@@ -1,10 +1,14 @@
 const Employee = require('../lib/Employee.js');
 
+jest.mock('../lib/Employee');
+
+console.log(new Employee());
+
 test('create an employee', () => {
-    const employee = new Employee('employee name', 123);
+    const employee = new Employee('Lucy', 123);
     console.log(employee);
   
-     expect(employee.name).toBe('employee name');
+     expect(employee.name).toEqual(expect.any(String));
      expect(employee.id).toEqual(expect.any(Number));
-     expect(employee.email).toStrictEqual(expect.any.String);
+     expect(employee.email).toEqual(expect.any(String));
    })
