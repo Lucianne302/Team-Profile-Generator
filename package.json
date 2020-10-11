@@ -18,5 +18,9 @@
   "homepage": "https://github.com/Lucianne302/Team-Profile-Generator#readme",
   "devDependencies": {
     "jest": "^26.5.2"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "math": "0.0.3"
   }
 }
